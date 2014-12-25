@@ -108,6 +108,9 @@
         __fest_log_error(e.message);
     }
     for (i in __fest_iterator0) {
+        if (!__fest_iterator0.hasOwnProperty(i)) {
+            continue;
+        }
         try {
             __fest_buf += (__fest_escapeHTML(i))
         } catch (e) {
@@ -128,6 +131,9 @@
         __fest_log_error(e.message);
     }
     for (i in __fest_iterator1) {
+        if (!__fest_iterator1.hasOwnProperty(i)) {
+            continue;
+        }
         v = __fest_iterator1[i];
         try {
             __fest_buf += (__fest_escapeHTML(i))
